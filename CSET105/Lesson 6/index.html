@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+<style>
+    body{
+        background-color: #c0c0f7;
+        background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    }
+   
+
+    /* rounding borders around table */
+    #table{
+        border-collapse: collapse;
+        box-shadow: 0 0 0 2px black;
+        border-style: hidden;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #table th, #table td{
+        padding: 15px;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    #table th
+    {
+        border-bottom: 2px solid black;
+        background-color: #c0c0f7;
+    }
+
+    #table th:first-child
+    {
+        border-top-left-radius: 20px;
+    }
+
+    #table th:last-child
+    {
+        border-top-right-radius: 20px;
+    }
+
+    .bold{
+        font-weight: bold;
+    }
+    .center{
+        text-align: center;
+    }
+    h2, h4{
+        margin-bottom: 0px;
+    }
+    h4{
+        font-size: 30px;
+    }
+    img{
+        width: 200px;
+        position: absolute;
+        top: 10vw;
+        right: 10vw;
+        border-radius: 50%;
+    }
+  .section{
+    margin-bottom: 80px;
+  }
+  .can div{
+    font-size: 20px;
+  }
+  td{
+    line-height: 30px;
+  }
+  .hypen{
+    list-style-type: none;
+  }
+  .hypen li:before{
+    content: "- ";
+    position: relative;
+    left: -5px;
+    
+  }
+  .ref{
+    margin-bottom: 25px;
+  }
+  .info, .ref{
+    line-height: 27px;
+  }
+  .hiddenTable td{
+    padding-right:50px;
+  }
+</style>
+<body style="margin: 0;">
+    <div class="can" style="margin: 10vw;">
+        <div class="section">
+            <h2 style="font-size: 60px;">Katy Shi</h2>
+            <div class="info">
+                XXX Keller Drive<br>Lititz PA 17543
+                <br>Email: <a href="mailto:kshi4121@stevenscollege.edu">kshi4121@stevenscollege.edu</a>
+                <br>Tel: (000) 000-0000
+            </div>
+           
+        </div>
+    
+        <img src="avatar copy.png" alt="space">
+    
+        <div class="section">
+            <h4>Career Objective</h5><hr>
+            <br>Graduate and get a good job
+        </div>
+        
+        <div class="section">
+            <h4>Present Status</h4><hr>
+            <br>Student at Thaddeus Stevens College of Technology
+        </div>
+
+        <div class="section">
+            <h4>Education</h4><hr>
+            <table id="table">
+                <tr>
+                    <th>Exam</th>
+                    <th>Board/University</th>
+                    <th>Year</th>
+                    <th>Name of Institution</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td>blah</td>
+                    <td>Laskhf University</td>
+                    <td>3495</td>
+                    <td>Akdf</td>
+                    <td>A+++++</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Warwick High School</td>
+                    <td>2023</td>
+                    <td></td>
+                    <td>4.1</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Thaddeus Stevens Collge of Technology</td>
+                    <td>2025</td>
+                    <td></td>
+                    <td>4.0</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h4>Computer Skills</h4><hr>
+            <table class="hiddenTable">
+                <tr>
+                    <td>Programming Languages</td>
+                    <td>:</td>
+                    <td>Java, JavaScript, Swift, Python &#40;greatest to least&#41;</td>
+                </tr>
+                <tr>
+                    <td>Web based skills</td>
+                    <td>:</td>
+                    <td>HTML, CSS, JQuery, Bootstrap</td>
+                </tr>
+                <tr>
+                    <td>Database skills</td>
+                    <td>:</td>
+                    <td>none</td>
+                </tr>
+                <tr>
+                    <td>Scripting skills</td>
+                    <td>:</td>
+                    <td>what is that</td>
+                </tr>
+                <tr>
+                    <td>Development Tools</td>
+                    <td>:</td>
+                    <td>Visual Studio Code, Atom, Eclipse</td>
+                </tr>
+                <tr>
+                    <td>Others</td>
+                    <td>:</td>
+                    <td>none</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h4>Professional Experience</h4><hr>
+            <ol>
+                <li>none</li>
+                <li>none</li>
+                <li>none</li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <h4>Projects</h4><hr>
+            <ul>
+                <li class="bold">Alert! Moisty Manors</li>
+                <ul>
+                    <li>A system that alerts homeowners via email when water is detected or the humidity is over 60%.</li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h4>Academic Projects</h4><hr>
+            <ul>
+                <li class="bold">N/A</li>
+                <ul>
+                    <li>N/A</li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h4>Achievements</h4><hr>
+            <ul class="hypen">
+                <li>2nd place in Programming Section of Media and Design Competition, April 2023</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h4>Language</h4><hr>
+            <ul class="hypen">
+                <li>English</li>
+                <li>little Chinese</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h4>Personal Information</h4><hr>
+            <table class="hiddenTable">
+                <tr>
+                    <td>Full Name</td>
+                    <td>:</td>
+                    <td>Katy Shi</td>
+                </tr>
+                <tr>
+                    <td>Father’s Name</td>
+                    <td>:</td>
+                    <td>Keyu</td>
+                </tr>
+                <tr>
+                    <td>Mother’s Name</td>
+                    <td>:</td>
+                    <td>Xuechai</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>:</td>
+                    <td>January 13, 2005</td>
+                </tr>
+                <tr>
+                    <td>Sex</td>
+                    <td>:</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>Marital Status</td>
+                    <td>:</td>
+                    <td>Single</td>
+                </tr>
+                <tr>
+                    <td>Nationality</td>
+                    <td>:</td>
+                    <td>American</td>
+                </tr>
+                <tr>
+                    <td>Religion</td>
+                    <td>:</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>Blood Group</td>
+                    <td>:</td>
+                    <td>I don't know</td>
+                </tr>
+                <tr>
+                    <td>Present Address</td>
+                    <td>:</td>
+                    <td>XXX Keller Drive<br>Lititz PA 17543</td>
+                </tr>
+                <tr>
+                    <td>Permanent Address</td>
+                    <td>:</td>
+                    <td>XXX Keller Drive<br>Lititz PA 17543</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h4>Hobbies</h4><hr>
+            <ul class="hypen">
+                <li>listening to music</li>
+                <li>reading</li>
+                <li>rhythm games</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h4>Games</h4><hr>
+            <ul class="hypen">
+                <li>Clash of Clans</li>
+                <li>Legacy of Discord - Furious Wings</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h4>References</h4><hr>
+            <div class="ref">
+                <strong>Mr. XYZ</strong>
+                <br>321 Asdkf St
+                <br>Asf PA 21434
+                <br>Email: xyz321@gmail.com
+                <br>Tel: (987) 654-3210
+            </div>
+            <div class="ref">
+                <strong>Mr. ABC</strong>
+                <br>123 Iuhi St
+                <br>Asf PA 21434
+                <br>Email: abc123@gmail.com
+                <br>Tel: (012) 345-6789
+            </div>
+        </div>
+        <div class="center">Copyright © Katy Shi 2023</div>
+    </div>
+</body>
+</html>

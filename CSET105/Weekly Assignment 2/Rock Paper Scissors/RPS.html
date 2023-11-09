@@ -1,0 +1,36 @@
+<!--10/30/23-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="RPS.js"> </script>
+    <link rel="stylesheet" href="RPS.css">
+</head>
+<body onload="setup()">
+    <div class="flex_row">
+        <div id="user">
+            <h1>You</h1>
+            <button onclick="setUserMove(this)">Rock</button>
+            <button onclick="setUserMove(this)">Paper</button>
+            <button onclick="setUserMove(this)">Scissors</button>
+        </div>
+        <div id="computer">
+            <h1>Computer</h1>
+            <button id="0">Rock</button>
+            <button id="1">Paper</button>
+            <button id="2">Scissors</button>
+        </div>
+        <div id="scoreboard">
+            <h1>Score:</h1>
+            <p>You - 0</p>
+            <p>Computer - 0</p>
+        </div>
+    </div>
+    <div>
+        <h1>System</h1>
+        <textarea id="comment"></textarea>
+    </div>
+</body>
+</html>
