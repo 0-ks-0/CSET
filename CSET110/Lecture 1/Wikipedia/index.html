@@ -1,0 +1,128 @@
+<!--10/6/23-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wikipedia</title>
+  </head>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#b1").click(function(){
+        $("#page1").toggle(1000);
+      });
+      $("#b2").click(function(){
+        $("#page2").toggle(1000);
+      });
+    });
+  </script>
+
+  <script>
+    function welcome(){
+      alert("Welcome to the webpage");
+    }
+  </script>
+
+  <body onload="welcome()">
+    <div>
+      <div>
+        <div><img src="logo.png" alt="logo for webiste"></div>
+        <div><h1>Website Title</h1></div>
+        <hr>
+        <br><br><br>
+      </div>
+      <div class="">
+        <h1>Article Title</h1>
+        <hr>
+      </div>
+      <div class="">
+        <h2>Table of Contents</h2>
+        <ul>
+          <li><a href="#heading1">some heading 1</a></li>
+          <li><a href="#heading2">some heading 2</a></li>
+          <li><a href="#heading3">some heading 3</a></li>
+          <li><a href="#heading4">some heading 4</a></li>
+          <li><a href="#heading5">some heading 5</a></li>
+          <li><a href="#heading6">some heading 6</a></li>
+          <li><a href="#heading7">some heading 7</a></li>
+          <li><a href="#heading8">some heading 8</a></li>
+          <li><a href="#heading9">some heading 9</a></li>
+          <li><a href="#heading10">some heading 10</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <hr>
+        <p>Click to hide or show</p>
+        <button id="b1">Page 1</button>
+        <button id="b2">Page 2</button>
+        <hr>
+
+      </div>
+
+      <div id="page1">
+        <p>Lorem ipsum dolor<sup><a href="#ref1">[1]</a></sup> sit amet, consectetur adipiscing elit. Praesent semper purus eu laoreet lacinia. Nulla sodales, neque eu eleifend ultrices, magna ante malesuada enim, at hendrerit neque ipsum non est. Aenean bibendum id elit non tempus. Aliquam et hendrerit ex, vel lobortis metus. Phasellus tincidunt, est eu cursus scelerisque, felis turpis porta urna, vitae mollis turpis arcu vel mi. Cras et ex scelerisque, tempor ipsum non, maximus erat. Donec imperdiet leo in sem bibendum, id cursus sem placerat.</p>
+        <h3 id="heading1">some heading 1</h3>
+        <p>Nulla pellentesque leo id molestie venenatis. Proin efficitur vehicula nisi, in pellentesque ante laoreet et. Nulla enim nunc, rutrum quis elit accumsan, congue interdum justo. Pellentesque vitae ipsum vulputate, commodo nulla et, dapibus nisi. Nunc eget neque interdum, ullamcorper nulla quis, consectetur dolor. Mauris blandit ex sed mauris tristique luctus. Nulla velit enim, commodo vel massa auctor, molestie placerat risus. Sed tempor sem eleifend sem fringilla, quis efficitur odio aliquet. Cras cursus sed ligula in dapibus. Mauris nec aliquet erat. Nullam eros nibh, convallis eu commodo eget, tincidunt in ipsum.</p>
+        <h3 id="heading2">some heading 2</h3>
+        <p>Sed malesuada, odio<sup><a href="#ref2">[2]</a></sup> in tempus laoreet, est mi egestas neque, et dapibus ipsum eros vitae nunc. Nam hendrerit diam eros, nec mollis justo vehicula eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis pellentesque mi ut tempor. Proin aliquet, dolor in convallis tincidunt, lacus orci interdum purus, quis consectetur orci mauris feugiat diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper accumsan tristique. Praesent ut congue neque. Sed sed arcu eleifend, dapibus felis a, dictum magna. Vestibulum non vehicula tellus. Maecenas placerat, tellus et convallis placerat, nunc magna sollicitudin diam, a auctor lorem elit nec enim. In vulputate ligula ante, sed rhoncus ante interdum non. Duis orci diam, pellentesque id augue quis, luctus aliquet sapien. Donec gravida dolor a mauris feugiat, vitae placerat ipsum tincidunt. In in diam nulla.</p>
+        <h3 id="heading3">some heading 3</h3>
+        <hr>
+        <p>Sed id ante porta, posuere lorem non, malesuada dolor. In eget risus eget odio mollis placerat. Nullam nec erat magna. Ut tempor lacus ex, ut vestibulum magna<sup><a href="#ref3">[3]</a></sup> placerat eu. Pellentesque viverra rhoncus libero nec elementum. Phasellus eu lorem non augue rhoncus tristique sed quis odio. Sed molestie imperdiet consectetur. Donec sodales enim ut elementum vehicula. Sed gravida arcu ut sapien elementum, sit amet tristique ante pretium. Phasellus nulla justo, consectetur ac facilisis eu, volutpat ut mi. Sed sit amet ipsum egestas, posuere orci vel, mollis nisi. Nullam tempus ultrices elit nec luctus. Phasellus sit amet felis id ante luctus ornare.</p>
+        <h3 id="heading4">some heading 4</h3>
+        <p>Nunc in hendrerit libero. Vivamus hendrerit in est vitae elementum. Nullam sodales felis vitae nibh aliquet, ac facilisis odio luctus. Quisque lorem turpis, sollicitudin id sodales et, pharetra a sapien. Donec malesuada mauris sit amet tempus ornare. Ut imperdiet vel augue pharetra fermentum. Morbi quis eros auctor, rhoncus elit at, tempus nulla. Phasellus non vulputate felis. Fusce vitae eros eget massa fringilla facilisis ut ac enim.</p>
+        <h3 id="heading5">some heading 5</h3>
+        <p>Aenean accumsan placerat ipsum elementum interdum. Curabitur eu suscipit libero. Mauris congue nulla id urna accumsan, bibendum iaculis felis ornare. Etiam ac euismod lectus, a dictum nisi. In hendrerit lacinia dolor, sit amet iaculis nulla tempor nec. Morbi dolor enim, sodales at ex quis, congue pulvinar nulla. Curabitur feugiat, justo a molestie porta, arcu risus maximus ex, accumsan tempus dolor erat vitae dui. Praesent suscipit lacus sed tellus sollicitudin, non lobortis ipsum vestibulum. Pellentesque malesuada tortor lectus, nec gravida purus consectetur et. Suspendisse a pellentesque turpis. Sed ut interdum ligula, ornare rutrum diam. Proin nec commodo metus.</p>
+        <h3 id="heading6">some heading 6</h3>
+        <p>Cras vehicula faucibus condimentum. Sed tincidunt tellus vitae metus rutrum, eu pulvinar quam eleifend. Aenean tristique sapien in nisi scelerisque, vel vestibulum risus mollis. In non tellus quis sem euismod molestie nec sed mauris. Nulla volutpat, nisi ac vulputate placerat, tellus ante vehicula ex, id ultricies elit nulla sit amet sapien. Mauris egestas metus eros, vitae fringilla nisl hendrerit a. Duis nisi enim, luctus eu varius eu, facilisis vulputate odio. Maecenas in justo vitae leo interdum placerat. In fringilla consectetur eros, ac commodo nunc maximus auctor. Praesent placerat vel risus vitae tincidunt. Donec sodales dapibus nibh, a pharetra tortor rhoncus vitae. Donec faucibus eleifend lacus, quis maximus lorem pellentesque at. Praesent venenatis semper mauris sit amet fringilla. Cras elementum venenatis purus ut fermentum.</p>
+        <h3 id="heading7">some heading 7</h3>
+        <p>Integer in tortor non diam cursus lobortis. In vel massa mi. Nunc a metus sit amet justo placerat hendrerit. Integer non leo egestas, aliquet dolor blandit, eleifend tortor. Aliquam blandit maximus ante ac efficitur. Etiam in accumsan nulla, eget pharetra felis. Vestibulum imperdiet lobortis lectus. Donec condimentum nec dolor ut tincidunt. Praesent et ex non quam congue vestibulum sed et dui. Donec nec condimentum nisl. Donec fermentum molestie aliquam.</p>
+        <h3 id="heading8">some heading 8</h3>
+        <hr><p>Quisque vestibulum non mi sit amet pellentesque. Aliquam ullamcorper, augue ut pulvinar bibendum, magna urna ornare enim, sed tempor felis dolor venenatis magna. Donec blandit, elit aliquam malesuada ullamcorper, urna felis volutpat nulla, vitae interdum eros tortor vel quam. Duis eget eleifend dui, vel consectetur orci. Nam consectetur ornare lectus, non vehicula dolor hendrerit at. Pellentesque vel odio dapibus, euismod lectus sit amet, euismod tellus. Integer ante eros, porta at arcu imperdiet, cursus viverra lectus. Praesent non mattis erat. Proin blandit hendrerit lacus mollis maximus. Sed diam nulla, vehicula eu venenatis placerat, cursus vel sapien. Donec interdum eros at dolor sagittis ultricies.</p>
+        <h3 id="heading9">some heading 9</h3>
+        <p>In ut quam leo. Nam quam elit, maximus eu blandit non, tristique quis neque. Curabitur quis porttitor felis, id sollicitudin ipsum. Aliquam molestie suscipit mauris eu hendrerit. Duis vitae nunc leo. Phasellus sit amet est pellentesque, sodales orci ac, lobortis nunc. Morbi ac odio est. Pellentesque auctor ut ipsum sit amet pretium. Vivamus posuere ante non dui lobortis commodo. Integer sollicitudin mauris sed justo congue auctor. Aenean euismod mauris elit. Nullam eleifend pharetra feugiat. Curabitur bibendum lacus et sodales egestas. Quisque fermentum sem gravida, blandit odio sed, lobortis mi. Mauris tincidunt, lacus a vehicula tempus, nulla odio posuere eros, in ultricies libero diam id felis. In pellentesque dui sit amet nunc ultrices, quis rutrum nibh varius.</p>
+        <h3 id="heading10">some heading 10</h3>
+        <p>Praesent consectetur ac nibh nec sollicitudin. Phasellus mi orci, mattis ac mauris nec, sodales pulvinar nisl. Etiam nec elit fermentum, commodo neque vel, fermentum mauris. Duis dictum venenatis mi, in accumsan libero rhoncus nec. Phasellus sagittis a lorem eget commodo. Duis imperdiet metus justo, sed fermentum quam condimentum sit amet. Maecenas rhoncus lorem id varius laoreet. Cras nec lectus a sem mollis sagittis. Nulla bibendum, est vitae mollis tincidunt, est quam placerat risus, vehicula tristique orci arcu sed est. Nullam gravida at orci a vehicula. Aliquam mauris turpis, varius sit amet eros in, malesuada facilisis metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ut mauris eget sapien molestie vulputate.</p>
+        <div>
+          <img src="img1.JPG" alt="building on mysterious environment" width="50%"> <!--image too big so had to change size-->
+          <br><caption>Image of building on mysterious environment</caption>
+        </div>
+      </div>
+      <div id="page2">
+        <marquee behavior="" direction=""><a href="https://simple.wikipedia.org/wiki/Cake#Creamed_Fat" target="_blank">Go to the wiki page</a></marquee>
+        <h3>some heading</h3>
+        <hr><p>In libero turpis, pharetra at blandit vel, bibendum eget neque. Nam tincidunt feugiat rhoncus. Vivamus tincidunt eros a iaculis ultricies. Aenean eleifend arcu at tellus pretium, nec ultrices sem cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras nec dignissim turpis. Mauris pharetra posuere metus, id vehicula dolor malesuada eget. Mauris eget laoreet nulla. Etiam ut tortor nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi vitae lobortis turpis. Sed nec ipsum massa. Vestibulum non quam est.</p>
+        <h3>some other heading</h3>
+        <p>Mauris ultrices magna nec turpis sollicitudin lobortis ac rutrum ligula. Ut finibus, nisl vel molestie pharetra, dolor elit iaculis quam, sed rutrum tellus elit ac urna. Proin iaculis odio nec laoreet elementum. Quisque dui diam, pharetra at nunc ultrices, efficitur euismod nisl. Vivamus ullamcorper elit eu tincidunt faucibus. Nunc ut mauris velit. Sed eget lacinia dui. Cras sit amet commodo metus. Aenean tincidunt massa a risus maximus, ut elementum dolor tempus. Morbi eleifend condimentum lorem sit amet lobortis. Vestibulum commodo rhoncus libero, nec porta est laoreet sit amet.</p>
+        <div>
+          <img src="img2.JPG" alt="glass" width="50%"> <!--image too big so had to change size-->
+          <br><caption>Image of an artwork on glass</caption>
+        </div>
+        <div>
+          <img src="img3.JPG" alt="stars getting pulled in by a vortex" width="50%"> <!--image too big so had to change size-->
+          <br><caption>Image of stars getting pulled in by a vortex</caption> 
+        </div>
+      </div>
+      <div>
+        <br>
+        <h3>References</h3>
+        <hr>
+        <ol>
+          <li id="ref1">reference 1 <a href="#ref1">fake link 1</a></li>
+          <li id="ref2">reference 2 <a href="#ref2">fake link 2</a></li>
+          <li id="ref3">reference 3 <a href="#ref3">fake link 3</a></li>
+        </ol>
+      </div>
+      <br><br><br>
+      <div>
+        <hr>
+        blah blah blah credits
+        <br>blah blah blah credits
+        <br>blah blah blah credits
+      </div>
+    </div>
+  </body>
+</html>

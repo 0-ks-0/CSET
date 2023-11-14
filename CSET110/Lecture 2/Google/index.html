@@ -1,0 +1,303 @@
+<!-- 10/11/23 -->
+<html>
+    <head>
+        <title>Google</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+    </head>
+    <style>
+        body{
+            margin: 0;
+        }
+        .top{
+            display: flex;
+            margin-top: 15px;
+            margin-bottom: 100px;
+ 
+        }
+        .left, .right{
+            padding: 10px;
+        }
+        .left a, .right a{
+            color: rgb(32, 36, 32);
+            font-family: sans-serif;
+        }
+        .leftCan{
+            display: flex;
+            position: fixed;
+            left: 15px;
+        }
+        .rightCan{
+            display: flex;
+            position: fixed;
+            right: 110;
+            gap: 10px;
+            margin-right: 25px;
+        }
+        .otherCan{
+            display: flex;
+            position: fixed;
+            right: 0;
+        }
+        a{
+            font-size: 17px;
+        }
+        a:link, a:visited{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline
+            
+        }
+        
+        .appIcon{
+            color:gray;
+            margin-top: 5px;
+            font-size: 30px;
+            margin-right: 5px;
+            
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            margin-top: 230px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        
+        .logo div{
+            font-size: 90px;
+            font-family: sans-serif;
+        }
+        .searchIcon{
+            color: rgb(155, 160, 165);
+        }
+        .search{
+            display: flex;
+            justify-content: center;
+            height: 45px;
+        }
+        .searchbar{
+            display: flex;
+            border: 1px solid rgb(220, 220, 221);
+            width: 600px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .searchbar:hover{
+            box-shadow: 3px 3px 1px rgba(0,0,0,0.1);
+        }
+       
+        input{
+            position: relative;
+            width: 480px;
+            height: 43px;
+            border-width: 0px; 
+        }
+        input:focus{
+            outline: none;
+        }
+        .rightIcon i{
+            color: rgb(83, 131, 236);
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            
+        }
+        button{
+            margin-top: 20px;
+            border-width: 0px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            background-color: rgb(248, 249, 250);
+            color: rgb(32, 33, 36);
+        }
+        button:hover{
+            border: 1px solid rgba(0,0,0,0.2);
+            box-shadow: 3px 3px 1px rgba(0,0,0,0.1);
+        }
+        .signIn{
+            color: white;
+            background-color: rgb(83, 131, 236);
+            border-radius: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 7;
+            margin-right: 10px;
+        }
+        .signIn:hover {
+            border: none;
+            box-shadow: 0;
+        }
+        .bottom{
+            background-color: rgb(242, 242, 242);
+            display: flex;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            justify-content: center;
+        }
+       
+        .bottom-left {
+            display: flex;
+            position: fixed;
+            left: 0px;
+        }
+        .bottom-left a, .bottom-middle a, .bottom-right a{
+            color: rgb(113, 117, 121);
+            font-family: sans-serif;
+        }
+        .bottom-right{
+            display: flex;
+            position: fixed;
+            right: 15px;
+        }
+        .bottom-left div {
+            padding-left: 20px;
+        }
+        .bottom-right div{
+            padding-right: 20px;
+        }
+       
+        .apps {
+            background-color: rgb(248, 250, 253);
+            width: 300px;
+            border: 10px solid rgb(234, 238 , 245);
+            border-radius: 20px;
+            position: absolute;
+            right: 5;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+        }
+       
+        .apps div i{
+            font-size: 50px;
+            margin-left: 20px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+       
+    </style>
+
+    <script>
+        function displayElement(name){
+            const e = document.getElementById(name);
+            if (!e) 
+                return;
+            if (e.style.display == "none")
+                e.style.display = "";
+            else
+                e.style.display = "none";
+        }
+
+        function search(){
+            const searchbar = document.getElementById("search");
+            if(!searchbar) 
+                return;
+
+            let text = searchbar.value
+            if(text.length < 1) 
+                return;
+
+            window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(text);
+        }
+
+        function setup(){
+            const searchbar = document.getElementById("search");
+            if (searchbar){
+                searchbar.addEventListener("keyup", (event) =>{
+                    event.preventDefault();
+                    let enterKey = 13;
+                    if(event.keyCode == enterKey)
+                        search();
+                });
+            }
+
+            const searchbutton = document.getElementById("search btn")
+            if (searchbutton)
+                searchbutton.onclick = search
+        }
+    </script>
+
+    <body onload="setup()">
+        <div>
+            <div class="top">
+                <div class="leftCan">
+                    <div class="left"><a href="https://about.google">About</a></div>
+                    <div class="left"><a href="https://store.google.com/">Store</a></div>
+                </div>
+
+                <div class="rightCan">
+                    <div class="right"><a href="https://mail.google.com/">Gmail</a></div>
+                    <div class="right"><a href="https://www.google.com/imghp">Images</a></div>
+                </div>
+                <div class="otherCan">
+                    <div><i class="material-symbols-outlined appIcon" onclick="displayElement('appsPage')">apps</i></div>
+                    <a href="https://accounts.google.com/ServiceLogin?authuser=0"><button class="signIn">Sign in</button></a>
+                </div>
+            </div>
+
+            <div class="apps" id="appsPage" style="display: none;">
+                <div>
+                    <i class="material-symbols-outlined">mail</i>
+                    <i class="material-symbols-outlined">add_to_drive</i>
+                    <i class="material-symbols-outlined">g_translate</i>
+                </div>
+                <div>
+                    <i class="material-symbols-outlined">fullscreen</i>
+                    <i class="material-symbols-outlined">settings</i>
+                    <i class="material-symbols-outlined">terminal</i>
+                </div>
+            </div>
+
+            <div class="body">
+                <div class="logo">
+                    <div style="color:rgb(83, 131, 236) ;">G</div>
+                    <div style="color: rgb(216, 81, 64);">o</div>
+                    <div style="color:rgb(241, 191, 66);">o</div>
+                    <div style="color:rgb(83, 131, 236) ;">g</div>
+                    <div style="color:rgb(88, 166, 92) ;">l</div>
+                    <div style="color: rgb(216, 81, 64) ;">e</div>
+                </div>
+
+                <div class="search">
+                    <div class="searchbar">
+                        <div class="leftIcon"><i class="material-symbols-outlined searchIcon">search</i></div>
+                        <div>
+                            <input type="text" id="search">
+                        </div>
+                        <div class="rightIcon">
+                            <i class="material-symbols-outlined icon" style="margin-right: 10px;">mic</i>
+                            <i class="material-symbols-outlined icon">photo_camera</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button style="margin-right: 10px;" id="search btn">Google Search</button>
+                    <button>I'm Feeling Lucky</button>
+                </div>
+            </div>
+            
+            <div class="bottom">
+                <div class="bottom-left">
+                    <div><a href="https://www.google.com/intl/en_us/ads/">Advertising</a></div>
+                    <div><a href="https://www.google.com/services/">Business</a></div>
+                    <div><a href="https://google.com/search/howsearchworks">How Search works</a></div>
+                </div>
+                <div class="bottom-middle">
+                    <img src="./leaf.png" alt="" height="14px">
+                    <a href="https://sustainability.google/">Our third decade of climate action: join us</a>
+                </div>
+                <div class="bottom-right">
+                <div><a href="https://policies.google.com/privacy">Privacy</a></div>
+                    <div><a href="https://policies.google.com/terms">Terms</a></div>
+                    <div><a href="https://www.google.com/preferences">Settings</a></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Ecliptic Edge</h1>
+
+    <div class="container">
+        <div class="content">
+            <h2>Sign Up</h2>
+            <form action="" onsubmit="return create()">
+                <input type="email" placeholder="Email" required id="email">
+                <input type="text" placeholder="Username" required minlength="4" maxlength="15">
+                <input type="password" id="password" placeholder="Password" required minlength="16" maxlength="32">
+                <input type="password" id="password_confirm" placeholder="Re-enter password" required minlength="16" maxlength="32">
+                <hr>
+                <div id="icon_div">
+                    <ion-icon id="facebook" name="logo-facebook"></ion-icon>
+                    <ion-icon id="instagram" name="logo-instagram"></ion-icon>
+                    <ion-icon id="twitter" name="logo-twitter"></ion-icon>
+                    <ion-icon id="google" name="logo-google"></ion-icon>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="tos" required>
+                    <label for="tos">I agree to the <a href="">Terms of Service</a></label>    
+                </div>
+                <div>
+                    <br><input type="checkbox" id="pp" required>
+                    <label for="pp">I agree to the <a href="">Privacy Policy</a></label>
+                </div>
+                <div>
+                    <br>
+                    <p>Already have an account? <a href="/Login.html">Login</a></p>
+                </div>
+
+                
+                <input type="submit" value="Create account">
+            </form>
+            <!-- <button>Login</button> -->
+           
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
+<!-- 1234567890123456 -->

@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.uppy{
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.uppy:hover{
+    background-color:rgb(241, 222, 160);
+}
+.center_text {
+    text-align: center;
+}
+
+body {
+    background-color: #FF6666;
+    background-image: linear-gradient(to bottom, #FF6666, #9933FF);
+    height: 980vh;
+  
+}
+
+.container {
+    margin-top: -110px;
+    padding: 50px;
+   
+}
+
+.navbar {
+    /* centering a fixed element */
+    position: sticky;
+    top: 0;
+    /* left: 50%;
+    transform: translate(-50%); */
+    z-index: 1;
+    background-color: rgb(194, 97, 194);
+    padding: 30px;
+    border-bottom: 5px solid black;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    background-color: yellow;
+    padding: 30px;
+    margin: 0 20px;
+    border-radius: 15px;
+    width: 190px;
+    text-align: center;
+    border: 2px solid white;
+
+}
+
+a:hover {
+    background-color: rgb(241, 222, 160);
+}
+a:active{
+    color: black;
+}
+
+.body {
+    margin-top: 110px;
+}
+
+.div_img {
+    border-radius: 15px;
+    width: 60%;
+    background-color: red;
+    background-image: url(choco_cake.png);
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    left: 40%;
+    top: 580px;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 0;
+    padding: 10px;
+
+}
+
+.prices {
+    width: 40%
+}
+
+.sample_price {
+    background-color: #FFFFCC;
+    margin-left: 20px;
+    padding: 50px 150px;
+}
+
+.price_font_size {
+    font-size: 70px;
+}
+
+.flex_row {
+    display: flex;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.lsdhf {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.lsdhf div {
+    width: 25%;
+    background-color: lightblue;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 30px;
+
+}
+.banner{
+    background-color: white;
+    margin-bottom: 20px;
+}
+.banner_img{
+    margin:10px;
+}
+.banner_img img{
+    border-radius: 15px;
+}
+.btnDiv{
+    margin-top: 30px;
+}
+.banner_text{
+    margin-left: 30px;
+}
+.banner_text div:first-child{
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #FFFFCC;
+    padding: 20px;
+    margin-left: 0px;
+
+}
+
+.btn:hover {
+    background-color: rgb(246, 220, 134);
+}
+
+.images {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.images div {
+    padding: 30px;
+}
+
+.images div div {
+    background-color: #CCFFCC;
+    width: calc(100vw/5);
+    height: calc(100vw/5);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.rounded_border {
+    border-radius: 15px;
+}
+.categories{
+    margin-top: 80px;
+
+}
+.category{
+    border: 1px solid red;
+    margin-bottom: 80px;
+    background-color: rgba(255, 255, 255, 0.7); 
+
+}
+.category_name {
+    font-size: 70px;
+    background-color: rgba(179, 179, 252, 1 );
+    padding: 20px 0px;
+    border-top-right-radius: 15px ;
+    border-top-left-radius: 15px;  
+}
+
+.item{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 30px 30px;
+    border-radius: 15px;
+}
+.item_img{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px 15px 15px;
+
+}
+.item_img img{
+    width: 300px;
+    border-radius: 15px;
+}
+.item_description{
+    margin: 10px;
+    padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {}

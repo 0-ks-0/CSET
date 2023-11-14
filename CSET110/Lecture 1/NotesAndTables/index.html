@@ -1,0 +1,158 @@
+<!--10/5/23-->
+<html>
+    <head>
+        <title>Notes and Tables</title>
+    </head>
+
+    <style>
+        div{
+            margin-top: 40px;
+        }
+        .darkgray{
+            background-color: rgb(190, 192, 191);
+        }
+        .lightgray{
+            background-color: rgb(220,220,220);
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td, th{
+            padding: 10px;
+            text-align: center;
+        }
+        
+   </style>
+
+    <body>
+        <!--Exercise 1-->
+        <div>
+            <ol type="I">
+                <li>Background Skills</li>
+                <ol type="A">
+                    <li>Unix Commands</li>
+                    <li>Vim Test Editors</li>
+                </ol>
+                <li>HTML</li>
+                <ol type="A">
+                    <li>Minimal Page</li>
+                    <li>Headings</li>
+                    <li>Elements</li>
+                    <li>Lists</li>
+                    <ol type="i">
+                        <li>Minimal Page</li>
+                        <li>Headings</li>
+                        <li>Elements</li>
+                        <li>Lists</li>
+                    </ol>
+                    <li>Links</li>
+                    <ol type="i">
+                        <li>Absolute</li>
+                        <li>Relative</li>
+                    </ol>
+                    <li>Elements</li>
+                </ol>
+                <li>CSS</li>
+                <ol type="A">
+                    <li>Anatomy</li>
+                    <li>Basic Selection</li>
+                    <ol type="i">
+                        <li>Element</li>
+                        <li>Class</li>
+                        <li>ID</li>
+                        <li>Group</li>
+                    </ol>
+                    <li>The DOM</li>
+                    <li>Advanced Selectors</li>
+                    <li>Box Model</li>
+                </ol>
+                <li>Programming</li>
+                <ol type="A">
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                </ol>
+                <li>Database</li>
+                <ol type="A">
+                    <li>Flat File</li>
+                    <li>Relational</li>
+                </ol>
+            </ol>
+        </div>
+        <!--Exercise 2-->
+        <div>
+            <h2>GeeksforGeeks</h2>
+            <h3>Nested Unordered List</h3>
+            GeeksforGeeks courses List:
+            <ul>
+                <li>DSA</li>
+                    <ul>
+                        <li>Array</li>
+                        <li>Linked List</li>
+                        <li>stack</li>
+                        <li>Queue</li>
+                    </ul>
+                <li>Web Technologies</li>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                <li>Apptitude</li>
+                <li>Gate</li>
+                <li>Placement</li>
+            </ul>
+        </div>
+        <!--Exercise 3-->
+        <div>
+            <table border="2">
+                <tr>
+                    <th class="darkgray">Person</th>
+                    <th class="darkgray">Age</th>
+                </tr>
+                <tr>
+                    <td class="lightgray">Chris</td>
+                    <td>38</td>
+                </tr>
+                <tr>
+                    <td class="lightgray">Dennis</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td class="lightgray">Sarah</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td class="lightgray">Karen</td>
+                    <td>47</td>
+                </tr>
+            </table>
+        </div>
+        <!--Exercise 4-->
+        <div>
+            <em>A test table with merged cells</em>
+            <table border="2">
+                <tr>
+                    <td class="darkgray" rowspan="2"></td>
+                    <td class="darkgray" colspan="2" ><strong>Average</strong></td>
+                    <td class="darkgray" rowspan="2"><strong>Red<br>eyes</strong></td>
+                </tr>
+                <tr>
+                    <td class="darkgray"><strong>height</strong></td>
+                    <td class="darkgray"><strong>weight</strong></td>
+                </tr>
+                <tr>
+                    <td class="darkgray"><strong>Males</strong></td>
+                    <td class="lightgray">1.9</td>
+                    <td class="lightgray">0.003</td>
+                    <td class="lightgray">40%</td>
+                </tr>
+                <tr>
+                    <td class="darkgray"><strong>Females</strong></td>
+                    <td class="lightgray">1.7</td>
+                    <td class="lightgray">0.002</td>
+                    <td class="lightgray">43%</td>
+                </tr>
+            </table>            
+        </div>
+    </body>
+</html>

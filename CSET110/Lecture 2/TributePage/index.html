@@ -1,0 +1,198 @@
+<!-- 10/11/23 -->
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tribute</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+    </head>
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            background-color: black;
+            color: white;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        #nav{
+
+            position: fixed;
+            top: 0;
+            right: 0;
+
+        }
+        .link, .active{
+            border-left: 2px solid black;
+            font-size: 20px;
+            padding: 15px 15px 15px 0px;
+            width: 200px;
+            background-color: rgb(42, 41, 41);
+            color: rgb(255, 255, 255);
+        }
+        .link:hover{
+            color: red
+        }
+        #linkTitle{
+            margin-top: 70px;
+        }
+        .active{
+            background-color: rgb(139, 139, 139);
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .cover, .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cover{
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column; 
+        }
+        .title{
+            font-size: 160px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+        .iconSouth{
+            border: 2px solid white;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 40px;
+        
+
+        }
+        .iconNav{
+            font-size: 50px;
+            position: fixed;
+            margin: 10px;
+            top: 0;
+            /* right: 0; */
+
+        }
+        .bodyRow1{
+            display: flex;
+        }
+        .section{
+            width: 50vw;
+            background-color: rgba(255, 255, 255, 0.13);;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 20px;
+        }
+        .header{
+            font-size: 60px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+        .secBody{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 50px;
+            font-size: 25px;
+        }
+       
+       
+        @media only screen and (max-width: 600px) {
+            .bodyRow1{
+                flex-direction: column;
+            }
+            .section{
+                width: 100vw;
+            }
+        }
+    </style>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#downArrow").click(function(){
+                $("html, body").scrollTop()
+                window.scrollTo(0, $("#sec1").offset().top);
+            })
+        });
+    </script> -->
+    <script>
+        function navigateLinks(name){
+            const e = document.getElementById(name);
+            const arr = document.getElementsByClassName("link")
+            for(let i = 0; i < arr.length; i++)
+                arr[i].className = "link";
+            e.className = "active link";
+        }
+        function toggleElement(name){
+            const e = document.getElementById(name);
+            if (!e) 
+                return;
+            if (e.style.display == "none"){
+                e.style.display = "flex";
+                e.style.flexDirection = "column"
+            }   
+            else
+                e.style.display = "none";
+
+        }
+    </script>
+    
+     <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
+
+    <body>
+        <div class="container">
+            <div>
+                <i onclick="toggleElement('nav')" class="material-icons iconNav">view_headline</i>
+            </div>
+
+            <!-- navbar -->
+            <div class="navbar" id="nav" style="display: none" > 
+                <a href="#cover"><div class="active link" id="linkTitle" onclick="navigateLinks('linkTitle')">Title</div></a>
+                <a href="#sec1"><div class="link" id="linkSec1" onclick="navigateLinks('linkSec1')">Section 1</div></a>
+                <a href="#sec2"><div class="link" id="linkSec2" onclick="navigateLinks('linkSec2')">Section 2</div></a>
+            </div>
+
+            <!-- cover page -->
+            <div class="cover" id="cover">
+                <div class="title">Title</div>
+                <!-- arrow button -->
+                <a href="#sec1" id="downArrow"><div><i class="material-icons iconSouth">south</i></div></a>
+            </div>
+
+            <!-- body -->
+            <div class="body">
+                <!-- row 1 -->
+                <div class="bodyRow1">
+                    <!-- section 1 -->
+                    <div id="sec1" class="section">
+                        <div class="header">
+                            Section 1<hr>
+                        </div>
+                        <div class="secBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in magna malesuada, pretium libero ut, pretium diam. Mauris mattis sapien a mauris porta, sit amet iaculis purus sagittis. Fusce cursus hendrerit quam ut pellentesque. Donec quis tellus sit amet libero accumsan vehicula a eget ex. Etiam consequat mollis eros efficitur maximus. Phasellus et arcu elementum, cursus turpis ut, lobortis tellus. Donec porta dolor mi, sit amet maximus tortor iaculis id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent quis elit massa. Ut rhoncus justo vel tellus viverra, a porttitor magna efficitur. Cras sit amet nulla a ipsum lacinia viverra vitae a elit. Curabitur scelerisque convallis laoreet. Sed condimentum viverra metus, eget egestas diam placerat vitae. In turpis sem, faucibus nec ullamcorper ut, ullamcorper et ipsum.</div>
+                    </div>
+                    <!-- section 2 -->
+                    <div id="sec2" class="section">
+                        <div class="header">
+                            Section 2<hr>
+                        </div>
+                        <div class="secBody">
+                            Vestibulum in dapibus mi. Suspendisse convallis arcu a augue volutpat consectetur. Phasellus maximus dolor non pretium tincidunt. Donec venenatis vitae neque sit amet pharetra. Nulla luctus accumsan laoreet. Vestibulum placerat ultricies libero, accumsan convallis diam tristique ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam blandit quam ac lacus tristique fermentum. Donec eu maximus eros.
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+    </body>
+</html>

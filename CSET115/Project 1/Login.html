@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Ecliptic Edge</h1>
+
+    <div class="container">
+        <div class="content">
+            <h2>Login</h2>
+            <form action="" onsubmit="return login()">
+                <input type="text" placeholder="Username or Email" required id="user">
+                <input type="password" id="password" placeholder="Password" required minlength="16" maxlength="32">
+                <hr>
+
+                <div id="icon_div">
+                    <ion-icon id="facebook" name="logo-facebook"></ion-icon>
+                    <ion-icon id="instagram" name="logo-instagram"></ion-icon>
+                    <ion-icon id="twitter" name="logo-twitter"></ion-icon>
+                    <ion-icon id="google" name="logo-google"></ion-icon>
+                </div>
+
+                <div>
+                    <p>Don't have an account? <a href="/SignUp.html">Sign up</a></p>
+                    <br><p><a href="/ForgotPassword.html">Forgot password</a></p>
+                </div>
+                <input type="submit" value="Login">
+            </form>           
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

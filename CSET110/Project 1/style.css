@@ -1,0 +1,306 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+    font-family: sans-serif;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: black;
+}
+.sticky
+{
+    position: fixed;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+}
+.flex_row
+{
+    display: flex;
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+.center_text
+{
+    text-align: center;
+}
+.center_element
+{
+    margin: auto;
+}
+.container
+{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.capitalize
+{
+    text-transform: capitalize;
+}
+article
+{
+    color: white;
+    padding: 7vh 0;
+    padding-top: 15vh;
+    /* border: 1px solid white */
+}
+.grid
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2vw
+}
+.grid_3
+{
+
+    gap: 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+h2
+{
+    font-size: 4rem;
+    animation: change_text_color 5s infinite;
+    color: red;
+    margin-bottom: 8vh;
+}
+h2:after
+{
+    display: block;
+    height: 0.2vh;
+    width:10vw;
+    background-color: white;
+    content: " ";
+    margin:auto;
+    margin-top: 3rem;
+}
+header
+{
+    width: 100vw;
+    background-color: black;
+    height: 10vh;
+}
+#header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;  
+    background-color: black;
+    color: white;   
+    height: 10vh;
+     
+}
+#header_left
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#name
+{
+    font-size: 1.2rem;
+}
+
+#logo
+{
+    border-radius: 50%;
+    width: 50px;
+}
+
+#navbarLinks li
+{
+    margin: 0px 20px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+#navbarLinks a
+{
+    text-decoration: none;
+    /* padding: 10px 30px; */
+    /* border-radius: 20px; */
+    /* background-color: lightblue; */
+    color: white;
+}
+#navbarLinks a:hover
+{
+    color: red;
+}
+
+#home
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(Images/IMG_3033.JPG);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+#intro
+{
+    width: fit-content;
+    height: fit-content;
+   
+}
+#intro h1
+{
+    font-size: 10rem;
+}
+#intro h3
+{
+    font-size: 5rem;
+}
+
+
+.skills_div
+{
+
+    border: 1px solid white;
+    margin: 0;
+    border-radius: 10px;
+
+
+}
+.skills_img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.skills_div h3,
+.skills_div p {
+    margin: 1rem 5%;
+
+}
+ a{
+    color:white
+}
+.project_container
+{
+    width: calc((1280px - 6vw)/4);
+    background-color: rgba(81, 73, 73, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    /* padding: 5%; */
+}
+.project_img
+{
+    width: 100%;
+    /* height: auto; */
+    /* height: 300px; */
+    /* margin-left: 5%; */
+    /* border-radius: 10px; */
+    /* overflow: auto; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+.img_scroll
+{
+    overflow: auto;
+    height: 15rem;
+    margin: 0;
+}
+.img_scroll:hover
+{
+    cursor: ns-resize;
+}
+.project_title
+{
+    width: 90%;
+    margin: 1rem 5%;
+}
+.project_description
+{
+    overflow: scroll;
+    width: 90%;
+    height: 6rem;
+    margin: 0 5% 5% 5%;
+}
+.project_description:hover
+{
+    cursor: ns-resize;
+}
+iframe
+{
+    width: 100%;
+    height: 80vh;
+}
+
+#contact_box
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 35rem;
+    padding: 1.1rem;
+    border-radius: 1rem;
+}
+form
+{
+    width: 100%;
+}
+input,
+textarea
+{
+    font-size: 1rem;
+    
+    padding: 15px 25px;
+    letter-spacing: 0.05rem;
+    border-radius: 25px;
+    margin: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+textarea
+{
+    border-radius: 15px;
+    resize: none;
+    overflow: scroll;
+    letter-spacing: 0.1rem;
+}
+input:hover,
+textarea:hover
+{
+    background-color: lightblue;
+}
+
+input[type=submit]
+{
+    cursor: pointer;
+}
+
+@keyframes change_text_color {
+    0%
+    {
+        color: red;
+    }
+    15%
+    {
+        color: orange;
+    }
+    30%
+    {
+        color: yellow;
+    }
+    45%
+    {
+        color: green;
+    }
+    60%
+    {
+        color: blue;
+    }
+    75%
+    {
+        color: purple;
+    }
+}

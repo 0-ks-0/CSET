@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="setup()">
+       
+        <!-- home -->
+        <article>
+            <div class="container">
+                <div id="intro">
+                    <h1>Hello,</h1>
+                    <h3 class="">I build websites</h3>
+                </div>
+            </div> 
+        </article>
+        
+
+         <!-- header -->
+         <header class="sticky">
+            <div class="container" id="header">
+                <div id="header_left">
+                    <img src="Images/avatar.png" alt="" id="logo">
+                    <span id="name">Katy</span>
+                </div>
+                
+                <nav id="navbar">
+                    <ul id="navbarLinks" class="flex_row">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Skills</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- about -->
+        <article>
+            <div class="container">
+                <h2 class="center_text capitalize">about</h2>
+
+                <iframe src="Resume.html" frameborder="0"></iframe>
+            </div> 
+        </article>
+
+        <!-- skills -->
+        <article>
+            <div class="container">
+                <h2 class="center_text capitalize">skills</h2>
+
+                <div class="grid_3">
+                    <div class="skills_div">
+                        <img class="skills_img" src="Images/webdeveloper.png" alt="Web devloper">
+                        <h3>Web Development</h3>
+                        <p>I have barely any experience</p>
+                    </div>
+
+                    <div class="skills_div">
+                        <img class="skills_img" src="Images/softwaredeveloper.png" alt="software development">
+                        <h3>Software Development</h3>
+                        <p>I have a couple years of experience in Java</p>
+                    </div>
+
+                    <div class="skills_div">
+                        <img class="skills_img" src="Images/mobiledeveloper.png" alt="mobile development">
+                        <h3>Mobile Development</h3>
+                        <p>I have one semester of experience involving Swift and XCode</p>
+                    </div>
+                </div>
+            </div> 
+        </article>
+
+        <!-- projects -->
+        <article>
+            <div class="container">
+                <h2 class="center_text capitalize">projects</h2>
+                <div class="grid" id="projects_div">
+                    <div class="project_container">
+                        <div class="img_scroll">
+                            <img class="project_img" src="Images/RockPaperScissors.png" alt="Rock Paper Scissors">
+                        </div>
+                        <h3 class="project_title">Rock Paper Scissors</h3>
+                        <p class="project_description">This is a Rock-Paper-Scissors game against the computer. There features a scoreboard for easy view of your score, and a system panel that displays your's and the computer's choices and who wins the round.</p>
+                    </div>
+
+                    <div class="project_container">
+                        <div class="img_scroll">
+                            <img class="project_img" src="Images/Quiz.png" alt="Quiz">
+                        </div>
+                        <h3 class="project_title">Quiz</h3>
+                        <p class="project_description">This website features a quiz form that will show you the score after you complete it.</p>
+                    </div>
+
+                    <div class="project_container">
+                        <div class="img_scroll">
+                            <img class="project_img" src="Images/MultiplicationTable.png" alt="Multiplication Table">
+                        </div>
+                        <h3 class="project_title">Multiplication Table</h3>
+                        <p class="project_description">Enter a number in the textfield and click the enter key. The website will display a multiplication table up to the number you inputted or at least 12 rows.</p>
+                    </div>
+
+                    <div class="project_container">
+                        <div class="img_scroll">
+                            <img class="project_img" src="Images/frontpage.png" alt="Front Page of Restaurant">
+                        </div>
+                        <h3 class="project_title">Front Page of a Restaurant</h3>
+                        <p class="project_description">This page features the front page of a restaurant. It includes a menu section</p>
+                    </div>   
+                </div>
+            </div> 
+        </article>
+
+        <!-- contact -->
+        <article>
+            <div class="container">
+                <h2 class="center_text capitalize">contact me</h2>
+
+                <div id="contact_box" class="center_element">
+                    <form action="" class="flex_column" onsubmit="submitForm()">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                        <input type="submit" value="Send Message">
+                    </form>  
+                </div>
+            </div> 
+        </article>
+    </body>
+</html>
+
+<!-- aaaaaaaaaaaaaaaa -->

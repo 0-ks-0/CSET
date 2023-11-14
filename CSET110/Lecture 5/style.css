@@ -1,0 +1,357 @@
+:root{
+    --blue: #0062b9;
+    --gray_page_color: #777;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    z-index: 2;
+
+}
+#logo_can{
+    margin-left: 30px;
+}
+#logo{
+    background-color: #0062b9;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    
+}
+#logo img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+
+}
+#name{
+    margin-left: 20px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+#nav{
+    list-style-type: none;
+    margin-right: 35px;
+    font-weight: 600;
+    font-size: 15px;
+}
+#nav li{
+    margin:20px
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: var(--blue);
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+.flex_row{
+    display: flex;
+}
+.center_vertical{
+    display: flex;
+    align-items: center;
+}
+.center_text{
+    text-align: center;
+}
+.center_horizontal{
+    display: flex;
+    justify-content: center;
+}
+#home{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0,98,185,0.8), rgba(0,98,185,0.8)), url("/Users/katyshi/Desktop/CSET/CSET110/Exercises/Lecture 5/assets/svg/common-bg.svg");
+    color: white; 
+}
+#home_content{
+    width: 92%;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -74%);
+}
+#home_content h1{
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+#home_content p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+#project_btn{
+    padding: 18px 60px;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 50px;
+}
+#home_sidebar{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    
+}
+.socials{
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+}
+
+#home_sidebar img{
+    padding: 10px 10px;
+    width: 50px;
+    height: 50px; 
+}
+#about{
+    background-color: rgb(246, 244, 244);
+}
+
+.page_top{
+    padding-top: 120px;
+}
+.page_top p{
+    color: var(--gray_page_color);
+}
+.page_heading{
+    font-size: 40px;
+    margin-bottom: 25px;
+    
+}
+.line{
+    background-color: var(--blue);
+    height: 5px;
+    width: 30px;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom:25px;
+}
+.page_top p{
+    font-size: 18px;
+}
+#about_info_can{
+    margin-top: 90px;
+}
+.info{
+    width: 100%;
+    margin-right: 100px;
+    margin-bottom: 120px;
+}
+.info p, .project_row p{
+    color: var(--gray_page_color);
+    line-height: 30px;
+    margin-bottom: 45px;
+}
+.project_row div{
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+
+.blue_btn{
+    background-color: var(--blue);
+    padding: 18px 46px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gray;
+}
+.blue_btn:hover{
+    color: white;
+}
+.skills{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.skills div{
+    padding: 15px;
+    background-color: rgb(230, 230, 230);
+    color: var(--gray_page_color);
+    font-weight: 610;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+
+}
+.page{
+    width: 80%;
+    margin: 0 auto;
+}
+h3{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+#projects .page_top p{
+    margin-bottom: 100px;
+}
+.project_row{
+    margin-bottom: 110px;
+}
+.project_row img{
+   width: 60%;
+}
+#contact{
+    background-image: linear-gradient(to right, rgba(0,98,185,0.8), rgba(0,98,185,0.8)), url("/Users/katyshi/Desktop/CSET/CSET110/Exercises/Lecture 5/assets/svg/common-bg.svg");
+}
+#contact .page{
+   .page_heading,  p{
+        color:white; 
+   }
+   .line{
+        background-color: white;
+   }
+   
+}
+#form_can{
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 40px;
+    margin-top: 90px;
+
+}
+form div{
+    margin-bottom: 30px;
+}
+label{
+    font-weight: 800;
+    color: #666;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+.input_text{
+    color: #333;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 10px;
+}
+#btn_contact_can{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+#btn_contact{
+    width: 30%;
+    border: none;
+}
+
+#contact .page{
+    padding-bottom: 120px;
+}
+
+.btn{
+    transition: transform .3s;
+}
+#footer{
+    background-color: #000;
+    color: white;
+   
+}
+#footer_page{
+    width: 95%;
+    margin: 0 auto;
+    padding: 60px;
+}
+#footer_top{
+    display: flex;
+    justify-content: space-between;
+   
+}
+hr{
+    margin: 70px 0 50px 0;
+    background-color: gray;
+    height: 1px;
+    border: none;
+}
+#footer h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+
+}
+#footer_left_can p{
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    line-height: 25px;
+}
+#footer_socials img{
+   width: 25px; 
+   margin-right: 10px;
+}
+textarea{
+    overflow:auto;
+    resize:none;
+}
+#copyright{
+    font-size: small;
+}
+.animation_can{
+    width: 25px;
+    height: 40px;
+    position: absolute;
+    border: 2px solid #eee;
+    border-radius: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90%;
+}
+.circle{
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background-color: #eee;
+    border-radius: 50%;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: animate_circle;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate_circle{
+    to{
+        top: 70%;
+        opacity: 0;
+    }
+}

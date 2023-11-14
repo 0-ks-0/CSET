@@ -1,0 +1,1 @@
+Enter a number in the textfield and click the enter key. The website will display a multiplication table up to the number you inputted or at least 12 rows.

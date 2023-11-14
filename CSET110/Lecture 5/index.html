@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div id="logo_can" class="flex_row center_vertical">
+            <div id="logo">
+                <img src="assets/png/john-doe.png" alt="">
+            </div>
+            <div id="name" class="uppercase">John Doe</div>
+        </div>
+        <ul id="nav" class="uppercase flex_row">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <!-- home page -->
+        <div id="home">
+            <div id="home_content">
+                <h1 class="center_text">HEY, MY NAME IS JOHN DOE</h1>
+                <p class="center_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo <br> quae quod deserunt eius sapiente solutions for complex problems</p>
+                <a href="#projects" id="project_btn" class="uppercase">projects</a>
+            </div>
+            <div id="home_sidebar" class="">
+                <div class="socials"><a href="#"><img src="assets/png/linkedin-ico.png" alt=""></a></div>
+                <div class="socials"><a href="#"><img src="assets/png/github-ico.png" alt=""></a></div>
+                <div class="socials"><a href="#"><img src="assets/png/twitter-ico.png" alt=""></a></div>
+                <div class="socials"><a href="#"><img src="assets/png/yt-ico.png" alt=""></a></div>
+                <div class="socials"><a href="#"><img src="assets/png/insta-ico.png" alt=""></a></div>
+            </div>
+
+            <div class="animation_can">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <!-- about me page -->
+        <div id="about">
+            <div class="page">
+                <div class="center_text page_top">
+                    <h2 class="uppercase page_heading">about me</h2>
+                    <div class="line"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod<br>deserunt eius sapiente</p>
+                </div>
+                <div id="about_info_can" class="flex_row">
+                    <div class="info">
+                        <h3>Get to know me!</h3>
+                    
+                        <p style="margin-bottom: 15px;">Hey! It's <strong>John Doe</strong> and I'm a <strong>Frontend Web Developer</strong> located in Los Angeles. I've done <strong>remote</strong> projects for agencies, consulted for startups, and collaborated with talented people to create <strong>digital products</strong> for both business and consumer use.</p>
+                        <p style>I'm a bit of a digital product junky. Over the years, I've used hundreds of web and mobile apps in different industries and verticals. Feel free to <strong>contact</strong> me here.</p>
+                        <a class="uppercase blue_btn" href="#contact">contact</a>
+                    </div>
+                    <div>
+                        <h3>My Skills</h3>
+                        <div class="skills">
+                            <div>HTML</div>
+                            <div>CSS</div>
+                            <div>JavaScript</div>
+                            <div>React</div>
+                            <div>SASS</div>
+                            <div>GIT</div>
+                            <div>Shopify</div>
+                            <div>Wordpress</div>
+                            <div>Google ADS</div>
+                            <div>Facebook Ads</div>
+                            <div>Android</div>
+                            <div>IOS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- projects page -->
+        <div id="projects">
+            <div class="page">
+                <div class=" center_text page_top">
+                    <h2 class="uppercase page_heading">projects</h2>
+                    <div class="line"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod<br>deserunt eius sapiente</p>
+                </div>
+                <div id="project_content">
+                    <!-- project 1 -->
+                    <div class="flex_row project_row">
+                        <img src="assets/jpeg/project-mockup-example.jpeg" alt="">
+                        <div>
+                            <h3>Project 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora, explicabo quae quod deserunt eius sapiente praesentium.</p>
+                            <a class="blue_btn uppercase" href="https://dopefolio.netlify.app/project-1" class="uppercase">case study</a>
+                        </div>
+                    </div>
+                    <!-- project 2 -->
+                    <div class="flex_row project_row">
+                        <img src="assets/jpeg/project-mockup-example.jpeg" alt="">
+                        <div>
+                            <h3>Project 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora, explicabo quae quod deserunt eius sapiente praesentium.</p>
+                            <a class="blue_btn uppercase" href="https://dopefolio.netlify.app/project-1" class="uppercase">case study</a>
+                        </div>
+                    </div>
+                    <!-- project 3 -->
+                    <div class="flex_row project_row">
+                        <img src="assets/jpeg/project-mockup-example.jpeg" alt="">
+                        <div>
+                            <h3>Project 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora, explicabo quae quod deserunt eius sapiente praesentium.</p>
+                            <a class="blue_btn uppercase" href="https://dopefolio.netlify.app/project-1" class="uppercase">case study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact page -->
+        <div id="contact">
+            <div class="page">
+                <div class="center_text page_top">
+                    <h2 class="uppercase page_heading">contact</h2>
+                    <div class="line"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod<br>deserunt eius sapiente</p>
+                </div>
+                <div id="form_can">
+                    <form action="#">
+                        <div>
+                            <label for="input_name">Email</label><br>
+                            <input type="text" id="input_name" class="input_text" placeholder="Enter Your Email" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label><br>
+                            <input type="text" id="email" class="input_text" placeholder="Enter Your Email" required>
+                        </div>
+                        <div>
+                            <label for="message">Message</label><br>
+                            <textarea  class="input_text" placeholder="Enter Your Message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                        <div id="btn_contact_can">
+                            <input type="submit" id="btn_contact" class="uppercase btn blue_btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div id="footer">
+            <div id="footer_page">
+                <div id="footer_top">
+                    <div id="footer_left_can">
+                        <h4 class="uppercase">John Doe</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit facilis tempora<br> explicabo quae quod deserunt
+                        </p>
+                    </div>
+                    <div id="footer_right_can">
+                        <h4 class="uppercase">social</h4>
+                        <div id="footer_socials">
+                            <a href="#">
+                                <img src="assets/png/linkedin-ico.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/png/github-ico.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/png/twitter-ico.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/png/yt-ico.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/png/insta-ico.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div id="copyright" class="center_text">
+                    copyright
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+There are ten buttons on the screen with random colors to start. Select an option from the drop-down list to change the colors
